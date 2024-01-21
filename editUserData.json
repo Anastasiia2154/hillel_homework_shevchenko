@@ -1,0 +1,66 @@
+[
+  {
+    "photo": "user-1621352948859.jpg",
+    "name": "John",
+    "lastName": "Dou",
+    "dateBirth": "2021-03-17T15:21:05.000Z",
+    "country": "Ukraine",
+    "expectedStatusCode": 200
+  },
+  {
+    "photo": "",
+    "name": "Jane",
+    "lastName": "Smith",
+    "dateBirth": "invalidDate",
+    "country": "USA",
+    "expectedStatusCode": 400
+  },
+  {
+    "photo": "user-1621352948859.png",
+    "name": "Name",
+    "lastName": "Johnson",
+    "dateBirth": "2021-03-17T15:21:05.000Z",
+    "country": "Canada",
+    "expectedStatusCode": 400
+  },
+  {
+    "photo": "user-1621352948859.gif",
+    "name": "John",
+    "lastName": "Doe",
+    "dateBirth": "2021-03-17T15:21:05.000Z",
+    "country": "Australia",
+    "expectedStatusCode": 400
+  },
+  {
+    "photo": "user-1621352948859.jpg",
+    "name": "Tom",
+    "lastName": "Johnson",
+    "dateBirth": "1970-05-11",
+    "country": "Germany",
+    "expectedStatusCode": 400
+  },
+  {
+    "photo": "user-1621352948859.jpg",
+    "name": 5678,
+    "lastName": "Johnson",
+    "dateBirth": "1970-05-11",
+    "country": "Germany",
+    "expectedStatusCode": 400
+  },
+  {
+    "photo": "user-1621352948859.jpg",
+    "name":"Name",
+    "lastName": "Johnson",
+    "dateBirth": "1970-05-11",
+    "country": "",
+    "expectedStatusCode": 400
+  },
+  {
+    "photo": "user-1621352948859.jpg",
+    "name":"Name",
+    "lastName": "Johnson",
+    "dateBirth": "date",
+    "country": "USA",
+    "expectedStatusCode": 400
+  }
+]

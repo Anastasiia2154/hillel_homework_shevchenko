@@ -1,0 +1,50 @@
+[
+  {
+    "name": "John",
+    "lastName": "Dou",
+    "email": "{{generatedEmail}}",
+    "password": "Qwerty123",
+    "repeatPassword": "Qwerty123",
+    "expectedStatusCode": 201
+  },
+  {
+    "name": "Jane",
+    "lastName": "Smith",
+    "email": "invalidemail",
+    "password": "Qwerty123",
+    "repeatPassword": "Qwerty123",
+    "expectedStatusCode": 400
+  },
+  {
+    "name": "Alex",
+    "lastName": "Johnson",
+    "email": "{{generatedEmail}}",
+    "password": "Short1",
+    "repeatPassword": "Short1",
+    "expectedStatusCode": 400
+  },
+  {
+    "name": "InvalidName",
+    "lastName": "",
+    "email": "{{generatedEmail}}",
+    "password": "Qwerty123",
+    "repeatPassword": "Qwerty123",
+    "expectedStatusCode": 400
+  },
+  {
+    "name": "Tom",
+    "lastName": "",
+    "email": "{{generatedEmail}}",
+    "password": "LongEnoughPassword123",
+    "repeatPassword": "LongEnoughPassword123",
+    "expectedStatusCode": 400
+  },
+  {
+    "name": "John",
+    "lastName": "Doe",
+    "email": "{{generatedEmail}}",
+    "password": "12345",
+    "repeatPassword": "12345",
+    "expectedStatusCode": 400
+  }
+]
